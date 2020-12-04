@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kerstpuzzel2020", "Kerstpuz
 		{D14A037B-2FC4-4077-89BF-057142CBB69B} = {D14A037B-2FC4-4077-89BF-057142CBB69B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KerstpuzzelLibrary", "..\..\..\Kerstpuzzel\KerstpuzzelLibrary\KerstpuzzelLibrary.csproj", "{FFF5A6F8-E676-4FA9-96C1-49C4F1D0555F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KerstpuzzelLibrary", "..\..\KerstpuzzelLibrary\KerstpuzzelLibrary.csproj", "{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,10 @@ Global
 		{9EA44BE7-1F1A-41A2-9D74-CD6B545ACD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA44BE7-1F1A-41A2-9D74-CD6B545ACD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA44BE7-1F1A-41A2-9D74-CD6B545ACD7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFF5A6F8-E676-4FA9-96C1-49C4F1D0555F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFF5A6F8-E676-4FA9-96C1-49C4F1D0555F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFF5A6F8-E676-4FA9-96C1-49C4F1D0555F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFF5A6F8-E676-4FA9-96C1-49C4F1D0555F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
