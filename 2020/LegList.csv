@@ -1,0 +1,136 @@
+﻿Texas;Alabama;4,4
+Nebraska;Alabama;6
+Arkansas;Alabama;2,4
+South Carolina;Alabama;2,3
+Rhode Island;Alabama;6,5
+Ohio;Alabama;3,8
+Florida;Alabama;2,4
+Georgia;Alabama;1,3
+Nevada;Alabama;10,8
+Idaho;Alabama;10,7
+Tennesse;Alabama;1,7
+Oregon;Alabama;11,9
+Virginia;Alabama;4
+Minnesota;Alabama;6,9
+Arizona;Alabama;8,8
+Illinois;Alabama;3,3
+Nebraska;Texas;4
+Arkansas;Texas;2,5
+South Carolina;Texas;6,4
+Rhode Island;Texas;2,9
+Ohio;Texas;6,4
+Florida;Texas;6,5
+Georgia;Texas;5,5
+Nevada;Texas;7
+Idaho;Texas;7,4
+Tennesse;Texas;4,3
+Oregon;Texas;8,4
+Virginia;Texas;7,5
+Minnesota;Texas;6,5
+Arizona;Texas;4,6
+Illinois;Texas;4,6
+Arkansas;Nebraska;3,7
+South Carolina;Nebraska;7
+Rhode Island;Nebraska;8,7
+Ohio;Nebraska;5,3
+Florida;Nebraska;8,4
+Georgia;Nebraska;6,5
+Nevada;Nebraska;5,9
+Idaho;Nebraska;5
+Tennesse;Nebraska;4,5
+Oregon;Nebraska;6,5
+Virginia;Nebraska;6,9
+Minnesota;Nebraska;2,7
+Arizona;Nebraska;5
+Illinois;Nebraska;3,5
+South Carolina;Arkansas;4,2
+Rhode Island;Arkansas;7,4
+Ohio;Arkansas;4
+Florida;Arkansas;4,9
+Georgia;Arkansas;3,4
+Nevada;Arkansas;8,5
+Idaho;Arkansas;8,3
+Tennesse;Arkansas;1,6
+Oregon;Arkansas;9,5
+Virginia;Arkansas;5
+Minnesota;Arkansas;5,2
+Arizona;Arkansas;6,6
+Illinois;Arkansas;2,4
+Rhode Island;South Carolina;4,5
+Ohio;South Carolina;2,8
+Florida;South Carolina;2,5
+Georgia;South Carolina;2,2
+Nevada;South Carolina;12,6
+Idaho;South Carolina;12
+Tennesse;South Carolina;2,6
+Oregon;South Carolina;13,2
+Virginia;South Carolina;2
+Minnesota;South Carolina;7
+Arizona;South Carolina;3,7
+Illinois;South Carolina;3,6
+Ohio;Rhode Island;3,6
+Florida;Rhode Island;6,8
+Georgia;Rhode Island;5,5
+Nevada;Rhode Island;14,5
+Idaho;Rhode Island;13,6
+Tennesse;Rhode Island;5,7
+Oregon;Rhode Island;15
+Virginia;Rhode Island;2,6
+Minnesota;Rhode Island;7,2
+Arizona;Rhode Island;13,5
+Illinois;Rhode Island;5,6
+Florida;Ohio;5,3
+Georgia;Ohio;3,2
+Nevada;Ohio;11,1
+Idaho;Ohio;10,3
+Tennesse;Ohio;2,4
+Oregon;Ohio;11,8
+Virginia;Ohio;1,7
+Minnesota;Ohio;4,5
+Arizona;Ohio;10
+Illinois;Ohio;1,9
+Georgia;Florida;2,2
+Nevada;Florida;13,2
+Idaho;Florida;13,3
+Tennesse;Florida;3,8
+Oregon;Florida;14,4
+Virginia;Florida;4,6
+Minnesota;Florida;9
+Arizona;Florida;11
+Illinois;Florida;5,4
+Nevada;Georgia;11,8
+Idaho;Georgia;11,4
+Tennesse;Georgia;2,1
+Oregon;Georgia;12,7
+Virginia;Georgia;2,8
+Minnesota;Georgia;7
+Arizona;Georgia;9,8
+Illinois;Georgia;3,4
+Idaho;Nevada;2,3
+Tennesse;Nevada;9,9
+Oregon;Nevada;1,9
+Virginia;Nevada;12,7
+Minnesota;Nevada;7,8
+Arizona;Nevada;2,7
+Illinois;Nevada;9,3
+Tennesse;Idaho;2,7
+Oregon;Idaho;1,4
+Virginia;Idaho;11,9
+Minnesota;Idaho;6,3
+Arizona;Idaho;4,2
+Illinois;Idaho;8,5
+Oregon;Tennesse;10,8
+Virginia;Tennesse;3,3
+Minnesota;Tennesse;5,3
+Arizona;Tennesse;8,2
+Illinois;Tennesse;1,5
+Virginia;Oregon;13,3
+Minnesota;Oregon;7,6
+Arizona;Oregon;4,6
+Illinois;Oregon;9,9
+Minnesota;Virginia;6,2
+Arizona;Virginia;11,4
+Illinois;Virginia;3,5
+Arizona;Minnesota;7,6
+Illinois;Minnesota;3,7
+#REF!;Arizona;7,9
