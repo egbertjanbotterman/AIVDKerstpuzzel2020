@@ -26,7 +26,7 @@ namespace TravellingSalesman
             _stippen.Add(new State("Georgia",972,575, StateKleur.Blauw));
             _stippen.Add(new State("Nevada",149,349, StateKleur.Grijs));
             _stippen.Add(new State("Idaho",1069,391, StateKleur.Rood));
-            _stippen.Add(new State("Tennesse",681,159, StateKleur.Grijs));
+            _stippen.Add(new State("Tennessee",681,159, StateKleur.Grijs));
             _stippen.Add(new State("Oregon",128,212, StateKleur.Grijs));
             _stippen.Add(new State("Virginia",1068,390, StateKleur.Rood));
             _stippen.Add(new State("Minnesota",681,159, StateKleur.Grijs));
