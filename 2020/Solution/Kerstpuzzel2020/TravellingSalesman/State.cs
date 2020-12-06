@@ -10,13 +10,13 @@ namespace TravellingSalesman
     {
         public string Name { get; set; }
         public Vector Locatie { get; set; }
-        public StaatsKleur Kleur { get; set; }
+        public StateKleur Kleur { get; set; }
         public bool Bezocht { get; set; } = false;
 
-        public State(string name, int x, int y, StaatsKleur kleur)
+        public State(string name, int x, int y, StateKleur kleur)
         {
             Name = name;
-            Locatie = new Vector( {X = x, Y = y};
+            Locatie = new Vector {X = x, Y = y};
             Kleur = kleur;
         }
     }

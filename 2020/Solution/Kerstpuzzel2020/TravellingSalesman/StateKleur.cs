@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TravellingSalesman
 {
-    public enum StaatsKleur
+    public enum StateKleur
     {
         Grijs,
         Rood,
