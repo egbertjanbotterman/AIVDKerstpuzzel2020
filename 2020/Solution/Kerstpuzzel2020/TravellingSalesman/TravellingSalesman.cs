@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
 namespace TravellingSalesman
@@ -32,6 +33,14 @@ namespace TravellingSalesman
             _stippen.Add(new State("Minnesota",681,159, StateKleur.Grijs));
             _stippen.Add(new State("Arizona",262,513, StateKleur.Rood));
             _stippen.Add(new State("Illinois",819,387, StateKleur.Blauw));
+        }
+
+        // Pythagoras?
+        public static double Afstand(Vector  src, Vector dst)
+        {
+            var deltaX = dst.X - src.X;
+            var deltaY = dst.Y - src.Y;
+            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
         }
     }
 }
