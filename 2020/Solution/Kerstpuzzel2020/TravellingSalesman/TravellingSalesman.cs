@@ -21,7 +21,7 @@ namespace TravellingSalesman
             _stippen.Add(new State("Nebraska",571,323, StateKleur.Blauw));
             _stippen.Add(new State("Arkansas",735,532, StateKleur.Grijs));
             _stippen.Add(new State("SouthCarolina",1036,532, StateKleur.Grijs));
-            _stippen.Add(new State("RhodeIsland",1194,252, StateKleur.Rood));
+            _stippen.Add(new State("RhodesIsland",1194,252, StateKleur.Rood));
             _stippen.Add(new State("Ohio",951,342, StateKleur.Grijs));
             _stippen.Add(new State("Florida",1036,714, StateKleur.Grijs));
             _stippen.Add(new State("Georgia",972,575, StateKleur.Blauw));
@@ -33,14 +33,6 @@ namespace TravellingSalesman
             _stippen.Add(new State("Minnesota",681,159, StateKleur.Grijs));
             _stippen.Add(new State("Arizona",262,513, StateKleur.Rood));
             _stippen.Add(new State("Illinois",819,387, StateKleur.Blauw));
-        }
-
-        // Pythagoras?
-        public static double Afstand(Vector  src, Vector dst)
-        {
-            var deltaX = dst.X - src.X;
-            var deltaY = dst.Y - src.Y;
-            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
         }
     }
 }
