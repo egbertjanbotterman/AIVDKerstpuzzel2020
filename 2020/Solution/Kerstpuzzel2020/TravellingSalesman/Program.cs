@@ -1,18 +1,26 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace TravellingSalesman
+namespace TravellingSalesmanProg
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TravellingSalesman salesman = new TravellingSalesman();
+            var travellingSalesmen = new TravellingSalesMen();
+
             for (int i = 0; i < 14; i++)
             {
-                var length = State.Afstand(salesman._stippen[2], salesman._stippen[i]);
-                Console.WriteLine($"{salesman._stippen[2].Name} - {salesman._stippen[i].Name} = {length}");
+                var length = State.Afstand(travellingSalesmen[2], travellingSalesmen[i]);
+                Console.WriteLine($"{travellingSalesmen[2].Name} - {travellingSalesmen[i].Name} = {length}");
             }
+
+            Console.WriteLine("****");
+
+
+            var texas = travellingSalesmen["Texas"];
+            Console.WriteLine($"{texas.Name}");
+            Console.WriteLine($"{texas.Name} - Nevada = {texas.AfstandTot(travellingSalesmen["Nevada"])}");
         }
     }
 }

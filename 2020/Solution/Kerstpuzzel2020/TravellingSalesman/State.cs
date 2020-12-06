@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 
-namespace TravellingSalesman
+namespace TravellingSalesmanProg
 {
     // Een stip op de kaart.
     public class State
@@ -24,6 +24,11 @@ namespace TravellingSalesman
         public static double Afstand(State src, State dst)
         {
             return Vector.Afstand(src.Locatie, dst.Locatie);
+        }
+
+        public double AfstandTot(State andereStaat)
+        {
+            return Afstand(this, andereStaat);
         }
     }
 }

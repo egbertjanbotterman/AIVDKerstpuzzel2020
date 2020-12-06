@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
-namespace TravellingSalesman
+namespace TravellingSalesmanProg
 {
-    public class TravellingSalesman
+    internal class TravellingSalesmenCollection
     {
         public List<State> _stippen = new List<State>();
 
-        public TravellingSalesman()
+        public TravellingSalesmenCollection()
         {
             InitializeStippenLijst();
         }
 
         // AIVD Kerstpuzzel teaser 2020
-        // Staten in USA, snelste race van Illenois naar Alabama, maar wel alle staten aantikken...
+        // Staten in USA, snelste race van Illinois naar Alabama, maar wel alle staten aantikken...? Dit is de route van santa.
         private void InitializeStippenLijst()
         {
             _stippen.Add(new State("Alabama", 890, 614, StateKleur.Blauw));
