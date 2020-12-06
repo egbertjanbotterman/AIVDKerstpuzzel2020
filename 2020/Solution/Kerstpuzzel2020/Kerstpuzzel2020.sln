@@ -12,8 +12,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kerstpuzzel2020", "Kerstpuz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KerstpuzzelLibrary", "..\..\KerstpuzzelLibrary\KerstpuzzelLibrary.csproj", "{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijkstraShortestPath", "DijkstraShortestPath\DijkstraShortestPath.csproj", "{0159ECD7-07EE-4AA8-A16A-F11CE41AFFD7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBD87EB8-AD1B-4D49-B157-BCAC66E1F286}"
 	ProjectSection(SolutionItems) = preProject
 		kaart.jpg = kaart.jpg
@@ -39,10 +37,6 @@ Global
 		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7862AB72-A1D1-4DAF-9CE7-22E2AADA0202}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0159ECD7-07EE-4AA8-A16A-F11CE41AFFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0159ECD7-07EE-4AA8-A16A-F11CE41AFFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0159ECD7-07EE-4AA8-A16A-F11CE41AFFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0159ECD7-07EE-4AA8-A16A-F11CE41AFFD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EA7BC54-422C-4488-A2D6-5E1D7B913E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EA7BC54-422C-4488-A2D6-5E1D7B913E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA7BC54-422C-4488-A2D6-5E1D7B913E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
