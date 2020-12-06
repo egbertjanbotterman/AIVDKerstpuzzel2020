@@ -14,6 +14,8 @@ namespace TravellingSalesman
             InitializeStippenLijst();
         }
 
+        // AIVD Kerstpuzzel teaser 2020
+        // Staten in USA, snelste race van Illenois naar Alabama, maar wel alle staten aantikken...
         private void InitializeStippenLijst()
         {
             _stippen.Add(new State("Alabama", 890, 614, StateKleur.Blauw));
