@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace TravellingSalesmanProg
 {
@@ -7,20 +8,22 @@ namespace TravellingSalesmanProg
     {
         static void Main(string[] args)
         {
-            var travellingSalesmen = new TravellingSalesMen();
+            var travellingSalesMan = new TravellingSalesMan();
 
-            for (int i = 0; i < 14; i++)
+            var startstate = travellingSalesMan["Illinois"];
+            var endstate = travellingSalesMan["Alabama"];
+
+            string stringTotal = "";
+
+            while (startstate != null)
             {
-                var length = State.Afstand(travellingSalesmen[2], travellingSalesmen[i]);
-                Console.WriteLine($"{travellingSalesmen[2].Name} - {travellingSalesmen[i].Name} = {length}");
+                stringTotal += startstate.Name[3 - (int)startstate.Kleur];
+                Console.WriteLine($"{startstate.Name}");
+                startstate.Bezocht = true;
+                startstate = travellingSalesMan.FindDichtstBijzijnde(startstate, endstate);
             }
-
-            Console.WriteLine("****");
-
-
-            var texas = travellingSalesmen["Texas"];
-            Console.WriteLine($"{texas.Name}");
-            Console.WriteLine($"{texas.Name} - Nevada = {texas.AfstandTot(travellingSalesmen["Nevada"])}");
+            Console.WriteLine($"{endstate.Name}");
+            Console.WriteLine($"{stringTotal}");
         }
     }
 }

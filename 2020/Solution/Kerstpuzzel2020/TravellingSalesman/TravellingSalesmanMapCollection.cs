@@ -5,11 +5,11 @@ using System.Text;
 
 namespace TravellingSalesmanProg
 {
-    internal class TravellingSalesmenCollection
+    internal class TravellingSalesmanMapCollection
     {
         public List<State> _stippen = new List<State>();
 
-        public TravellingSalesmenCollection()
+        public TravellingSalesmanMapCollection()
         {
             InitializeStippenLijst();
         }
