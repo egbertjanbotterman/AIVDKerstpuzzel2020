@@ -15,7 +15,7 @@ namespace TravellingSalesmanProg
         }
 
         // AIVD Kerstpuzzel teaser 2020
-        // Staten in USA, snelste race van Illinois naar Alabama, maar wel alle staten aantikken...? Dit is de route van santa.
+        // Staten in USA, snelste race van Illinois naar Alabama, maar wel alle staten aantikken...? Dit zijn alle map points van Santa
         private void InitializeStippenLijst()
         {
             _stippen.Add(new State("Alabama", 890, 614, StateKleur.Blauw));
