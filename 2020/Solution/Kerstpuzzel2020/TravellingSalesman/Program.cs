@@ -17,7 +17,7 @@ namespace TravellingSalesmanProg
 
             while (startstate != null)
             {
-                stringTotal += startstate.Name[3 - (int)startstate.Kleur];
+                stringTotal += startstate.Name[(int)startstate.Kleur];
                 Console.WriteLine($"{startstate.Name}");
                 startstate.Bezocht = true;
                 startstate = travellingSalesMan.FindDichtstBijzijnde(startstate, endstate);

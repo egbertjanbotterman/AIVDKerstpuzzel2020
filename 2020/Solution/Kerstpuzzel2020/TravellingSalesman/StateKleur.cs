@@ -6,8 +6,8 @@ namespace TravellingSalesmanProg
 {
     public enum StateKleur
     {
-        Grijs,
+        Blauw,
         Rood,
-        Blauw
+        Grijs
     }
 }
