@@ -1,4 +1,5 @@
 ﻿using Kerstpuzzel;
+using Kerstpuzzel.Text;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -63,7 +64,14 @@ namespace Kerstpuzzel2020
                             string woord1 = een.Item1 + twee.Item1 + drie.Item1 + vier.Item1;
                             string woord2 = een.Item2 + twee.Item2 + drie.Item2 + vier.Item2;
 
-                           // if()
+                            if(!Text.ContainsConsonant(woord1) ||
+                                !Text.ContainsVowel(woord1) ||
+                                !Text.ContainsConsonant(woord2) ||
+                                !Text.ContainsVowel(woord2)
+                                )
+                            {
+                                continue;
+                            }
 
                             woordjes.Add(new Tuple<string,string>(woord1, woord2));                            
                         }
@@ -71,6 +79,7 @@ namespace Kerstpuzzel2020
                 }
             }
 
+            Console.WriteLine("Gevonden woordjes: " + woordjes.Count());
             BestandHelper.SaveObject<List<Tuple<string, string>>>(woordjes, @"c:\temp\woordjes");
         }
     }
