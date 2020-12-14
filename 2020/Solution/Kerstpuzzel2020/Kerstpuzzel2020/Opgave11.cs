@@ -23,7 +23,7 @@ namespace Kerstpuzzel2020
             int derdeIndex = 14;
 
             List<Tuple<string, string>> vierdeLetter = new List<Tuple<string, string>>();
-            int vierdeIndex = 2;
+            int vierdeIndex = 24;
 
             List<Tuple<string, string>> woordjes = new List<Tuple<string, string>>();
 
@@ -45,7 +45,7 @@ namespace Kerstpuzzel2020
                     derdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value - derdeIndex)).Key));
 
                 }
-                if (item.Value > vierdeIndex)
+                if (item.Value <= vierdeIndex)
                 {
                     vierdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value - vierdeIndex)).Key));
 
@@ -62,6 +62,8 @@ namespace Kerstpuzzel2020
                         {
                             string woord1 = een.Item1 + twee.Item1 + drie.Item1 + vier.Item1;
                             string woord2 = een.Item2 + twee.Item2 + drie.Item2 + vier.Item2;
+
+                            if()
 
                             woordjes.Add(new Tuple<string,string>(woord1, woord2));                            
                         }

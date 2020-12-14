@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace KerstpuzzelLibrary
+namespace Kerstpuzzel
 {
     public class RomanNumeral
     {
@@ -24,18 +24,18 @@ namespace KerstpuzzelLibrary
         public bool IsOdd { get; private set; }
         public bool IsPrime { get; private set; }
 
-        public char Pos1 { get; private set; }
-        public char Pos2 { get; private set; }
-        public char Pos3 { get; private set; }
-        public char Pos4 { get; private set; }
-        public char Pos5 { get; private set; }
+        public Char Pos1 { get; private set; }
+        public Char Pos2 { get; private set; }
+        public Char Pos3 { get; private set; }
+        public Char Pos4 { get; private set; }
+        public Char Pos5 { get; private set; }
 
 
         public static bool IsValid(string num)
         {
             //De 'halve' symbolen V, L en D (5, 50 en 500) komen maximaal één keer in een getal voor.
-            char V = 'V';
-            char I = 'I';
+            Char V = 'V';
+            Char I = 'I';
             if (num.Count(v => v == V) > 1 ||
                 num.Count(l => l == 'L') > 1 ||
                 num.Count(d => d == 'D') > 1)
@@ -43,7 +43,7 @@ namespace KerstpuzzelLibrary
                 return false;
             }
 
-            //  return true;
+          //  return true;
             //Hieronder de moderne regels
 
             // Hooguit drie keer hetzelfde symbool achter elkaar, dus niet VIIII maar IX.
@@ -137,9 +137,9 @@ namespace KerstpuzzelLibrary
         }
         private static int romanValue(int index)
         {
-            int basefactor = index % 2 * 4 + 1; // either 1 or 5...
+            int basefactor = ((index % 2) * 4 + 1); // either 1 or 5...
             // ...multiplied with the exponentation of 10, if the literal is `x` or higher
-            return index > 1 ? (int)(basefactor * Math.Pow(10.0, index / 2)) : basefactor;
+            return index > 1 ? (int)(basefactor * System.Math.Pow(10.0, index / 2)) : basefactor;
         }
 
 
