@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
 
-namespace KerstpuzzelLibrary
+namespace Kerstpuzzel
 {
     public static class BestandHelper
     {
