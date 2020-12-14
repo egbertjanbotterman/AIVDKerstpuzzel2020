@@ -1,9 +1,8 @@
-﻿using KerstpuzzelLibrary;
+﻿using Kerstpuzzel;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Kerstpuzzel2020
 {
@@ -45,6 +44,7 @@ namespace Kerstpuzzel2020
                     derdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value - derdeIndex)).Key));
 
                 }
+                //Let op: deze is -B dus grootste eerst: MAXIMUM index is 24
                 if (item.Value <= vierdeIndex)
                 {
                     vierdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value - vierdeIndex)).Key));
@@ -63,7 +63,7 @@ namespace Kerstpuzzel2020
                             string woord1 = een.Item1 + twee.Item1 + drie.Item1 + vier.Item1;
                             string woord2 = een.Item2 + twee.Item2 + drie.Item2 + vier.Item2;
 
-                            if()
+                           // if()
 
                             woordjes.Add(new Tuple<string,string>(woord1, woord2));                            
                         }

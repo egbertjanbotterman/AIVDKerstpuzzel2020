@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\KerstpuzzelLibrary\KerstpuzzelLibrary.csproj" />
-    <ProjectReference Include="..\NUnitTestProject1\OptimalRoute.csproj" />
+    <ProjectReference Include="..\Kerstpuzzel\Kerstpuzzel.csproj" />
   </ItemGroup>
 
 </Project>
