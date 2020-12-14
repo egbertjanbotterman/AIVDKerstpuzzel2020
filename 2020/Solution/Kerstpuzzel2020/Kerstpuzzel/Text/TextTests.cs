@@ -45,12 +45,43 @@ namespace Kerstpuzzel.Text
         public void Contains_Consonant()
         {
             Assert.IsTrue(Text.ContainsConsonant("bakje"));
+            Assert.IsTrue(Text.ValidDoubleConsonant("bakje"));
+            Assert.IsTrue(Text.CouldBeADutchWord("bakje"));
         }
 
         [Test]
         public void Does_not_Contain_Consonant()
         {
             Assert.IsFalse(Text.ContainsConsonant("aui"));
+        }
+
+        [Test]
+        public void Invalid_doube_consonant_at_start()
+        {
+            Assert.IsFalse(Text.ValidDoubleConsonant("bbakje"));
+        }
+
+        [Test]
+        public void Valid_doube_consonant_at_start()
+        {
+            Assert.IsTrue(Text.ValidDoubleConsonant("brakje"));
+        }
+
+        [Test]
+        [TestCase("slav")]
+        [TestCase("slaz")]
+        [TestCase("slah")]
+        [TestCase("slaj")]
+        [TestCase("slaw")]
+        public void Invalid_Dutch_word(string word)
+        {
+            Assert.IsFalse(Text.CouldBeADutchWord(word));
+        }
+
+        [Test]
+        public void Valid_Dutch_word()
+        {
+            Assert.IsTrue(Text.CouldBeADutchWord("Nieuw"));
         }
     }
 }

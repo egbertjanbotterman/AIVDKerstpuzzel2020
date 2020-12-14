@@ -48,7 +48,7 @@ namespace Kerstpuzzel2020
                 //Let op: deze is -B dus grootste eerst: MAXIMUM index is 24
                 if (item.Value <= vierdeIndex)
                 {
-                    vierdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value - vierdeIndex)).Key));
+                    vierdeLetter.Add(new Tuple<string, string>(item.Key, Alfabet.A1B2.FirstOrDefault(x => x.Value == (item.Value + (26-vierdeIndex))).Key));
 
                 }
             }
@@ -64,11 +64,8 @@ namespace Kerstpuzzel2020
                             string woord1 = een.Item1 + twee.Item1 + drie.Item1 + vier.Item1;
                             string woord2 = een.Item2 + twee.Item2 + drie.Item2 + vier.Item2;
 
-                            if(!Text.ContainsConsonant(woord1) ||
-                                !Text.ContainsVowel(woord1) ||
-                                !Text.ContainsConsonant(woord2) ||
-                                !Text.ContainsVowel(woord2)
-                                )
+                            if(!Text.CouldBeADutchWord(woord1)||
+                                !Text.CouldBeADutchWord(woord2))
                             {
                                 continue;
                             }

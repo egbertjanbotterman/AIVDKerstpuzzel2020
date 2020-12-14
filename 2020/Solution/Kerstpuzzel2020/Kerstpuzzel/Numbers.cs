@@ -43,7 +43,7 @@ namespace Kerstpuzzel
             return list;
         }
 
-        public static string DecimalToDifferentBase(long decimalNumber, int radix)
+        public static string DecimalToDifferentBase(long decimalNumber, long radix)
         {
             const int BitsInLong = 64;
             const string Digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/";
