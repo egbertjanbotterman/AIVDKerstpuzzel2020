@@ -51,6 +51,10 @@
     <Compile Include="Sudoku\Getal.cs" />
     <Compile Include="Sudoku\Sudoku.cs" />
     <Compile Include="Sudoku\SudokuTests.cs" />
+    <Compile Include="Text\Decryption\Playfair.cs" />
+    <Compile Include="Text\Decryption\PlayfairTests.cs" />
+    <Compile Include="Text\Decryption\PolybiusTests.cs" />
+    <Compile Include="Text\Decryption\Polybius.cs" />
     <Compile Include="Text\Text.cs" />
     <Compile Include="Text\TextTests.cs" />
   </ItemGroup>
