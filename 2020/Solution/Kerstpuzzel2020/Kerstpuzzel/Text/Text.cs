@@ -141,5 +141,36 @@ namespace Kerstpuzzel.Text
             }
             return false;
         }
+
+        public static bool ContainsKeyWords(string text)
+        {
+            string upper = text.ToUpper();
+
+
+            return upper.Contains("DE")
+                || upper.Contains("HET")
+                || upper.Contains("EEN")
+|| upper.Contains("DAT")
+|| upper.Contains("DIE")
+|| upper.Contains("DIE")
+|| upper.Contains("EN")
+|| upper.Contains("HEBBEN")
+|| upper.Contains("IK")
+|| upper.Contains("IN")
+|| upper.Contains("IS")
+|| upper.Contains("JA")
+|| upper.Contains("JE")
+|| upper.Contains("MAAR")
+|| upper.Contains("MET")
+|| upper.Contains("NIET")
+|| upper.Contains("OP")
+|| upper.Contains("TE")
+|| upper.Contains("UH")
+|| upper.Contains("VAN")
+|| upper.Contains("VOOR")
+|| upper.Contains("WORDEN")
+|| upper.Contains("ZIJN");
+
+        }
     }
 }

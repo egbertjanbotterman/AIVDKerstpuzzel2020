@@ -33,5 +33,7 @@ namespace Kerstpuzzel
             { "y",  25},
             { "z",  26}
         };
+
+
     }
 }

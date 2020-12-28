@@ -8,9 +8,21 @@ namespace Kerstpuzzel.Text.Decryption
 {
     public class Polybius
     {
-        public Polybius(string skipChar = "j")
+        public Polybius(string key , string skipChar = "J")
         {
-            Populate(skipChar);
+            _skipChar = skipChar;
+            Populate(key);
+        }
+
+        private string _skipChar;
+
+        private string getEquivalent(string letter)
+        {
+            switch (letter)
+            {
+                case "J": return "I";                
+                default: return "";
+            }
         }
 
         public string[,] Square = new string[5, 5];
@@ -19,7 +31,7 @@ namespace Kerstpuzzel.Text.Decryption
         {
             foreach (string item in Square)
             {
-                if (item == value)
+                if (item == value.ToUpper())
                 {
                     return true;
                 }
@@ -27,7 +39,7 @@ namespace Kerstpuzzel.Text.Decryption
             return false;
         }
 
-        public void Populate(string skipChar)
+        public void Populate(string key)
         {
             for (int iRow = 0; iRow < 5; iRow++)
             {
@@ -35,11 +47,49 @@ namespace Kerstpuzzel.Text.Decryption
                 {
                     if (Square[iRow, iCol] == null)
                     {
-                        Square[iRow, iCol] = Alfabet.A1B2.First(x => !Contains(x.Key) && !(x.Key == skipChar)).Key;
+                        if (key != "")
+                        {
+                            Square[iRow, iCol] = key.Substring(0, 1);
+                            key = key.Substring(1);
+                        }
+                        else
+                        {
+                            Square[iRow, iCol] = Alfabet.A1B2.First(x => !Contains(x.Key) && !(x.Key.ToUpper() == _skipChar.ToUpper())).Key.ToUpper();
+                        }
+
                     }
                 }
             }
 
+        }
+
+        internal int[] GetCoordinates(string v)
+        {
+            string value = v.ToUpper();
+            //Als gevraagd wordt naar het skipChar, dan het equivalent gebruiken
+            if(value == _skipChar)
+            {
+                value = getEquivalent(value);
+            }
+
+
+            for (int iRow = 0; iRow < 5; iRow++)
+            {
+                for (int iCol = 0; iCol < 5; iCol++)
+                {
+                    if (Square[iRow, iCol] == value)
+                    {
+                       return new int[] { iRow, iCol };
+                    }
+                }
+            }
+
+            throw new Exception("Polybius bevat de gevraagde waarde heul nie man!");
+        }
+
+        internal string GetValue(int[] pos)
+        {
+            return Square[pos[0], pos[1]];
         }
     }
 }

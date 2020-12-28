@@ -55,6 +55,8 @@
     <Compile Include="Text\Decryption\PlayfairTests.cs" />
     <Compile Include="Text\Decryption\PolybiusTests.cs" />
     <Compile Include="Text\Decryption\Polybius.cs" />
+    <Compile Include="Text\Permutaties.cs" />
+    <Compile Include="Text\PermutatiesTest.cs" />
     <Compile Include="Text\Text.cs" />
     <Compile Include="Text\TextTests.cs" />
   </ItemGroup>

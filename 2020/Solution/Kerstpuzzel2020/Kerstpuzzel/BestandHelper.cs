@@ -7,9 +7,14 @@ namespace Kerstpuzzel
     {
         public static string ApplicationPath => @"D:\Temp";
 
+        private static string filefullPath(string filename)
+        {
+            return Path.Combine(ApplicationPath, filename + ".txt");
+        }
+
         public static void SaveObject<T>(T obj, string filename)
         {
-            File.WriteAllText(Path.Combine(ApplicationPath, filename + ".txt"), JsonConvert.SerializeObject(obj, new JsonSerializerSettings
+            File.WriteAllText(filefullPath(filename), JsonConvert.SerializeObject(obj, new JsonSerializerSettings
             {
                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             }));
@@ -19,9 +24,20 @@ namespace Kerstpuzzel
         {
             var settings = new JsonSerializerSettings();
             T obj = JsonConvert.DeserializeObject<T>(
-                File.ReadAllText(Path.Combine(ApplicationPath, filename + ".txt")), settings);
+                File.ReadAllText(filefullPath(filename)), settings);
 
             return obj;
+        }
+
+        public static void AddToFile(string fileName, string line)
+        {
+
+            using (StreamWriter sw = File.AppendText(filefullPath(fileName)))
+            {
+                sw.WriteLine(line);
+            }
+
+
         }
     }
 }
